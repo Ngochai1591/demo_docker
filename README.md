@@ -1,17 +1,17 @@
-# demo_docker
-Demo for dockerFile and docker-compose PSQL
+# Demo of docker-compose with Postgresql
+Demo docker-compose PSQL
 
-#### How to run it
+# How to run it
 
-# Run with detach mode
+## Run with detach mode
 docker-compose up -d 
 
-# Run with attach mode
+## Run with attach mode
 docker-compose up
 
-# Stop container
+## Stop container
 docker-compose down
 
-# Remove orphan volumes
+## Remove orphan volumes
 docker-compose down --remove-orphans --volumes
 
