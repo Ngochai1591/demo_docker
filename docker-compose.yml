@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  db:
+    container_name: "demo_docker_postgres"
+    image: "postgres:latest"
+    ports:
+      - "5444:5432"
+    environment:
+      POSTGRES_USER: hello
+      POSTGRES_PASSWORD: world
+      PGDATA: "/data/postgres"
+      POSTGRES_DB: "docker_postgres"
+    volumes:
+       - ./postgres:/data/postgres
+       - ./docker_postgres_init_db.sql:/docker-entrypoint-initdb.d/docker_postgres_init_db.sql
+    
+
