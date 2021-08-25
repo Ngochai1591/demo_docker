@@ -1,6 +1,12 @@
 # Demo of docker-compose with Postgresql
 Demo docker-compose PSQL
 
+# ENV data
+POSTGRES_USER: hello
+POSTGRES_PASSWORD: world
+PGDATA: "/data/postgres"
+POSTGRES_DB: "docker_postgres"
+
 # How to run it
 
 ## Run with detach mode
